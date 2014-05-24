@@ -1,11 +1,101 @@
 <!DOCTYPE html>
 <html>
+	
 	<head>
-	<title>Ellen's Website</title>
+		<title>Ellen's Website</title>
+
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style>
+
+			.cf:before,
+			.cf:after {
+			    content: " "; /* 1 */
+			    display: table; /* 2 */
+			}
+
+			.cf:after {
+			    clear: both;
+			}
+
+			/**
+			 * For IE 6/7 only
+			 * Include this rule to trigger hasLayout and contain floats.
+			 */
+			.cf {
+			    *zoom: 1;
+			}
+
+
+			h1 {
+				margin:0px;
+				padding:0px;
+			}
+
+			.container {
+				width:70%;
+				height:400px;
+				background-color:lightgray;
+				margin-left:auto;
+				margin-right:auto;
+				font-family: 'Roboto', sans-serif;
+			}
+
+			.header {
+				width:100%;
+
+			}
+				.nav {
+					width:100%;
+				}
+				.nav-box {
+					width:25%;
+					padding-left:10px;
+					padding-right:10px;
+					background-color:steelblue;
+					display:inline;
+					cursor:pointer;
+				}
+				.nav-box:hover {
+					background-color:green;
+				}
+
+
+			.body {
+				width:100%;
+			}
+
+			.footer {
+				width:100%;
+			}
+
+
+
+		</style>
+
+
 	</head>
 	<body>
 
-		<h1>Hello, World!</h1>
+
+		<div class="container cf">
+		
+			<div class="header cf">
+				<div class="nav cf">
+					<div class="nav-box"><a href="rolfes_resume.pdf">Resume</a></div>
+					<div class="nav-box"><a href="words.html">Words</a></div>
+					<div class="nav-box"><a href="video.html">Video</a></div>
+					<div class="nav-box"><a href="audio.html">Audio</a></div>
+				</div>
+
+			</div>
+
+			<div class="body cf"></div>
+
+			<div class="footer cf"></div>
+
+		</div>
+
+
 
 	</body>
 </html>
